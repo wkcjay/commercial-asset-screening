@@ -1,0 +1,532 @@
+[
+  {
+    "record_type": "site",
+    "record_id": "site-queenstown-001",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "site",
+    "record_id": "site-queenstown-001",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229065",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229065",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229075",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229075",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229086",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229086",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229098",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229098",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229099",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229099",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229138",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229138",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229139",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229139",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229140",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229140",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229141",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229141",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229142",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-229142",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-queenstown-001",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-queenstown-002",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-queenstown-003",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-queenstown-004",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-queenstown-005",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-queenstown-006",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-queenstown-007",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "site",
+    "record_id": "site-tampines-001",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "site",
+    "record_id": "site-tampines-001",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230805",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230805",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230819",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230819",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230830",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230830",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230848",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230848",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230849",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230849",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230850",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230850",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230851",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230851",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230882",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230882",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230883",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230883",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230884",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-230884",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-tampines-001",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-tampines-002",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-tampines-003",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-tampines-004",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-tampines-005",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-tampines-006",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-tampines-007",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "site",
+    "record_id": "site-bishan-001",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "site",
+    "record_id": "site-bishan-001",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223093",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223093",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223094",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223094",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223107",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223107",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223118",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223118",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223119",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223119",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223139",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223139",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223140",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223140",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223141",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223141",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223149",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223149",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223150",
+    "source_id": "src-hdb-resale-official"
+  },
+  {
+    "record_type": "transaction",
+    "record_id": "hdb-223150",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-bishan-001",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-bishan-002",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-bishan-003",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-bishan-004",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "amenity",
+    "record_id": "am-bishan-005",
+    "source_id": "src-onemap-search-official"
+  },
+  {
+    "record_type": "commercial_asset",
+    "record_id": "cict-asia-square-tower-2",
+    "source_id": "src-cict-asia-square-tower-2"
+  },
+  {
+    "record_type": "commercial_asset",
+    "record_id": "cict-capitaspring",
+    "source_id": "src-cict-capitaspring"
+  },
+  {
+    "record_type": "commercial_asset",
+    "record_id": "cict-raffles-city-singapore",
+    "source_id": "src-cict-raffles-city"
+  },
+  {
+    "record_type": "commercial_asset",
+    "record_id": "keppel-ocean-financial-centre",
+    "source_id": "src-keppel-reit-portfolio"
+  },
+  {
+    "record_type": "commercial_asset",
+    "record_id": "mpact-vivocity",
+    "source_id": "src-mpact-vivocity"
+  },
+  {
+    "record_type": "commercial_asset",
+    "record_id": "oue-bayfront",
+    "source_id": "src-oue-bayfront"
+  },
+  {
+    "record_type": "commercial_asset",
+    "record_id": "oue-downtown-office",
+    "source_id": "src-oue-downtown-office"
+  },
+  {
+    "record_type": "commercial_asset",
+    "record_id": "oue-mandarin-gallery",
+    "source_id": "src-oue-mandarin-gallery"
+  },
+  {
+    "record_type": "commercial_asset",
+    "record_id": "oue-one-raffles-place",
+    "source_id": "src-oue-one-raffles-place"
+  },
+  {
+    "record_type": "commercial_asset",
+    "record_id": "suntec-city",
+    "source_id": "src-suntec-reit-portfolio"
+  },
+  {
+    "record_type": "asset_valuation",
+    "record_id": "val-cict-asia-square-tower-2-2025",
+    "source_id": "src-cict-asia-square-tower-2"
+  },
+  {
+    "record_type": "asset_valuation",
+    "record_id": "val-cict-capitaspring-2025",
+    "source_id": "src-cict-capitaspring"
+  },
+  {
+    "record_type": "asset_valuation",
+    "record_id": "val-cict-raffles-city-singapore-2025",
+    "source_id": "src-cict-raffles-city"
+  },
+  {
+    "record_type": "asset_valuation",
+    "record_id": "val-oue-bayfront-2025",
+    "source_id": "src-oue-bayfront"
+  },
+  {
+    "record_type": "asset_valuation",
+    "record_id": "val-oue-downtown-office-2025",
+    "source_id": "src-oue-downtown-office"
+  },
+  {
+    "record_type": "asset_valuation",
+    "record_id": "val-oue-mandarin-gallery-2025",
+    "source_id": "src-oue-mandarin-gallery"
+  },
+  {
+    "record_type": "asset_valuation",
+    "record_id": "val-oue-one-raffles-place-2025",
+    "source_id": "src-oue-one-raffles-place"
+  },
+  {
+    "record_type": "market_event",
+    "record_id": "evt-cict-capitaspring-remaining-interest-2025",
+    "source_id": "src-cict-capitaspring"
+  },
+  {
+    "record_type": "market_event",
+    "record_id": "evt-bt-faber-uol-2026",
+    "source_id": "src-bt-faber-uol-2026"
+  },
+  {
+    "record_type": "market_event",
+    "record_id": "evt-bt-novena-singland-2026",
+    "source_id": "src-bt-novena-singland-2026"
+  },
+  {
+    "record_type": "market_event",
+    "record_id": "evt-bt-seletar-boustead-2026",
+    "source_id": "src-bt-seletar-boustead-2026"
+  }
+]

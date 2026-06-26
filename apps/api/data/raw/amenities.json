@@ -1,0 +1,135 @@
+[
+  {
+    "id": "am-queenstown-001",
+    "name": "QUEENSTOWN MRT STATION (EW19)",
+    "raw_category": "MRT Station",
+    "latitude": 1.294550851849307,
+    "longitude": 103.8060771559821
+  },
+  {
+    "id": "am-queenstown-002",
+    "name": "COMMONWEALTH MRT STATION (EW20)",
+    "raw_category": "MRT Station",
+    "latitude": 1.302501999243251,
+    "longitude": 103.7982285233357
+  },
+  {
+    "id": "am-queenstown-003",
+    "name": "QUEENSTOWN PRIMARY SCHOOL",
+    "raw_category": "School",
+    "latitude": 1.295593650090142,
+    "longitude": 103.8075486173318
+  },
+  {
+    "id": "am-queenstown-004",
+    "name": "ALEXANDRA HOSPITAL",
+    "raw_category": "Healthcare",
+    "latitude": 1.285481130393132,
+    "longitude": 103.8001809254652
+  },
+  {
+    "id": "am-queenstown-005",
+    "name": "QUEENSWAY SHOPPING CENTRE",
+    "raw_category": "Shopping Centre",
+    "latitude": 1.287595189398704,
+    "longitude": 103.8033972877883
+  },
+  {
+    "id": "am-queenstown-006",
+    "name": "DAWSON PLACE",
+    "raw_category": "Shopping Centre",
+    "latitude": 1.292703398550616,
+    "longitude": 103.810958956467
+  },
+  {
+    "id": "am-queenstown-007",
+    "name": "ALEXANDRA CANAL LINEAR PARK",
+    "raw_category": "Park",
+    "latitude": 1.294906696583102,
+    "longitude": 103.8101601559327
+  },
+  {
+    "id": "am-tampines-001",
+    "name": "TAMPINES EAST MRT STATION (DT33)",
+    "raw_category": "MRT Station",
+    "latitude": 1.356191482715451,
+    "longitude": 103.9546344624998
+  },
+  {
+    "id": "am-tampines-002",
+    "name": "TAMPINES BUS INTERCHANGE",
+    "raw_category": "Bus Interchange",
+    "latitude": 1.354367434829519,
+    "longitude": 103.9436747283467
+  },
+  {
+    "id": "am-tampines-003",
+    "name": "TAMPINES MALL",
+    "raw_category": "Shopping Centre",
+    "latitude": 1.352527372785196,
+    "longitude": 103.9446987510717
+  },
+  {
+    "id": "am-tampines-004",
+    "name": "HAWKER CENTRE @ OUR TAMPINES HUB",
+    "raw_category": "Shopping Centre",
+    "latitude": 1.35354740485205,
+    "longitude": 103.9403811045466
+  },
+  {
+    "id": "am-tampines-005",
+    "name": "AMP-MERCU STUDENT CARE CENTRE @ TAMPINES PRIMARY SCHOOL",
+    "raw_category": "School",
+    "latitude": 1.350486394669401,
+    "longitude": 103.943573098509
+  },
+  {
+    "id": "am-tampines-006",
+    "name": "TAMPINES POLYCLINIC",
+    "raw_category": "Healthcare",
+    "latitude": 1.357309964224063,
+    "longitude": 103.9458494654068
+  },
+  {
+    "id": "am-tampines-007",
+    "name": "TAMPINES ECO GREEN PARK",
+    "raw_category": "Park",
+    "latitude": 1.363777576057033,
+    "longitude": 103.9481832998956
+  },
+  {
+    "id": "am-bishan-001",
+    "name": "BISHAN MRT STATION",
+    "raw_category": "MRT Station",
+    "latitude": 1.35101889777846,
+    "longitude": 103.8500572086081
+  },
+  {
+    "id": "am-bishan-002",
+    "name": "BISHAN BUS INTERCHANGE",
+    "raw_category": "Bus Interchange",
+    "latitude": 1.350116942059639,
+    "longitude": 103.8497631804412
+  },
+  {
+    "id": "am-bishan-003",
+    "name": "JUNCTION 8",
+    "raw_category": "Shopping Centre",
+    "latitude": 1.350481253450499,
+    "longitude": 103.848760473211
+  },
+  {
+    "id": "am-bishan-004",
+    "name": "BISHAN ACTIVE PARK",
+    "raw_category": "Park",
+    "latitude": 1.356574906817655,
+    "longitude": 103.8470625591524
+  },
+  {
+    "id": "am-bishan-005",
+    "name": "KUO CHUAN PRESBYTERIAN PRIMARY SCHOOL",
+    "raw_category": "School",
+    "latitude": 1.349782237509823,
+    "longitude": 103.8545292878501
+  }
+]

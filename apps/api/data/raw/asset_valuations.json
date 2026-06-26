@@ -1,0 +1,72 @@
+[
+  {
+    "id": "val-cict-asia-square-tower-2-2025",
+    "asset_id": "cict-asia-square-tower-2",
+    "valuation_amount": 2252000000,
+    "currency": "SGD",
+    "valuation_date": "2025-12-31",
+    "valuation_scope": "asset_100_percent",
+    "valuation_basis": "CICT reported valuation as at 31 Dec 2025.",
+    "source_id": "src-cict-asia-square-tower-2"
+  },
+  {
+    "id": "val-cict-capitaspring-2025",
+    "asset_id": "cict-capitaspring",
+    "valuation_amount": 1900000000,
+    "currency": "SGD",
+    "valuation_date": "2025-12-31",
+    "valuation_scope": "asset_100_percent",
+    "valuation_basis": "CICT reported valuation as at 31 Dec 2025, excluding the serviced residence component.",
+    "source_id": "src-cict-capitaspring"
+  },
+  {
+    "id": "val-cict-raffles-city-singapore-2025",
+    "asset_id": "cict-raffles-city-singapore",
+    "valuation_amount": 3434000000,
+    "currency": "SGD",
+    "valuation_date": "2025-12-31",
+    "valuation_scope": "asset_100_percent",
+    "valuation_basis": "CICT reported valuation as at 31 Dec 2025.",
+    "source_id": "src-cict-raffles-city"
+  },
+  {
+    "id": "val-oue-bayfront-2025",
+    "asset_id": "oue-bayfront",
+    "valuation_amount": 1422000000,
+    "currency": "SGD",
+    "valuation_date": "2025-12-31",
+    "valuation_scope": "asset_100_percent",
+    "valuation_basis": "OUE REIT reported valuation based on OUE Allianz Bayfront LLP's 100% interest.",
+    "source_id": "src-oue-bayfront"
+  },
+  {
+    "id": "val-oue-downtown-office-2025",
+    "asset_id": "oue-downtown-office",
+    "valuation_amount": 930000000,
+    "currency": "SGD",
+    "valuation_date": "2025-12-31",
+    "valuation_scope": "asset_100_percent",
+    "valuation_basis": "OUE REIT reported valuation as at 31 Dec 2025.",
+    "source_id": "src-oue-downtown-office"
+  },
+  {
+    "id": "val-oue-mandarin-gallery-2025",
+    "asset_id": "oue-mandarin-gallery",
+    "valuation_amount": 438000000,
+    "currency": "SGD",
+    "valuation_date": "2025-12-31",
+    "valuation_scope": "asset_100_percent",
+    "valuation_basis": "OUE REIT reported valuation as at 31 Dec 2025.",
+    "source_id": "src-oue-mandarin-gallery"
+  },
+  {
+    "id": "val-oue-one-raffles-place-2025",
+    "asset_id": "oue-one-raffles-place",
+    "valuation_amount": 1930000000,
+    "currency": "SGD",
+    "valuation_date": "2025-12-31",
+    "valuation_scope": "asset_100_percent",
+    "valuation_basis": "OUE REIT reported valuation as at 31 Dec 2025; attributable value uses modelled effective ownership.",
+    "source_id": "src-oue-one-raffles-place"
+  }
+]

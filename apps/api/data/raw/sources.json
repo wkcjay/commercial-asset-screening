@@ -1,0 +1,152 @@
+[
+  {
+    "id": "src-hdb-resale-official",
+    "label": "HDB resale flat prices based on registration date from Jan 2017 onwards",
+    "publisher": "Housing & Development Board via data.gov.sg",
+    "url": "https://data.gov.sg/datasets/d_8b84c4ee58e3cfc0ece0d773c8ca6abc/view",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "Jan 2017 to 2026-06",
+    "reliability": "official",
+    "notes": "Official public resale transaction dataset. HDB publishes registration month, not exact transaction day; local extracts store the month as YYYY-MM-01 only for ISO sorting."
+  },
+  {
+    "id": "src-onemap-search-official",
+    "label": "OneMap Search API geocoding and amenity address results",
+    "publisher": "OneMap Singapore",
+    "url": "https://www.onemap.gov.sg/apidocs/search",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "2026-06-25",
+    "reliability": "official",
+    "notes": "Used to resolve HDB block/street records and named amenities to official coordinates and addresses."
+  },
+  {
+    "id": "src-oue-bayfront",
+    "label": "OUE REIT - OUE Bayfront property page",
+    "publisher": "OUE REIT",
+    "url": "https://www.ouereit.com/oue-bayfront.html",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "31 Dec 2025",
+    "reliability": "official",
+    "notes": "Issuer portfolio page with address, area, occupancy, ownership interest and valuation."
+  },
+  {
+    "id": "src-oue-one-raffles-place",
+    "label": "OUE REIT - One Raffles Place property page",
+    "publisher": "OUE REIT",
+    "url": "https://www.ouereit.com/one-raffles-place.html",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "31 Dec 2025",
+    "reliability": "official",
+    "notes": "Issuer portfolio page with address, area, occupancy, ownership interest and valuation."
+  },
+  {
+    "id": "src-oue-downtown-office",
+    "label": "OUE REIT - OUE Downtown Office property page",
+    "publisher": "OUE REIT",
+    "url": "https://www.ouereit.com/oue-downtown-office.html",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "31 Dec 2025",
+    "reliability": "official",
+    "notes": "Issuer portfolio page with address, area, occupancy, ownership interest and valuation."
+  },
+  {
+    "id": "src-oue-mandarin-gallery",
+    "label": "OUE REIT - Mandarin Gallery property page",
+    "publisher": "OUE REIT",
+    "url": "https://www.ouereit.com/mandarin-gallery.html",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "31 Dec 2025",
+    "reliability": "official",
+    "notes": "Issuer portfolio page with address, area, occupancy, ownership interest and valuation."
+  },
+  {
+    "id": "src-cict-capitaspring",
+    "label": "CICT - CapitaSpring property page",
+    "publisher": "CapitaLand Integrated Commercial Trust",
+    "url": "https://www.cict.com.sg/office/capitaspring.html",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "31 Dec 2025",
+    "reliability": "official",
+    "notes": "Issuer portfolio page with address, NLA, valuation and property details."
+  },
+  {
+    "id": "src-cict-raffles-city",
+    "label": "CICT - Raffles City Singapore property page",
+    "publisher": "CapitaLand Integrated Commercial Trust",
+    "url": "https://www.cict.com.sg/integrated-development/raffles-city-sg.html",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "31 Dec 2025",
+    "reliability": "official",
+    "notes": "Issuer portfolio page with address, NLA, valuation and property details."
+  },
+  {
+    "id": "src-cict-asia-square-tower-2",
+    "label": "CICT - Asia Square Tower 2 property page",
+    "publisher": "CapitaLand Integrated Commercial Trust",
+    "url": "https://www.cict.com.sg/office/asia-square-tower-2.html",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "31 Dec 2025",
+    "reliability": "official",
+    "notes": "Issuer portfolio page with address, NLA, valuation and property details."
+  },
+  {
+    "id": "src-keppel-reit-portfolio",
+    "label": "Keppel REIT portfolio page",
+    "publisher": "Keppel REIT",
+    "url": "https://www.keppelreit.com/en/portfolio/",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "Issuer public portfolio page",
+    "reliability": "official",
+    "notes": "Loaded for issuer and asset identity; valuation fields are intentionally null until primary valuation fields are extracted."
+  },
+  {
+    "id": "src-suntec-reit-portfolio",
+    "label": "Suntec REIT portfolio page",
+    "publisher": "Suntec REIT",
+    "url": "https://www.suntecreit.com/portfolio/",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "Issuer public portfolio page",
+    "reliability": "official",
+    "notes": "Loaded for issuer and asset identity; valuation fields are intentionally null until primary valuation fields are extracted."
+  },
+  {
+    "id": "src-mpact-vivocity",
+    "label": "MPACT - VivoCity property page",
+    "publisher": "Mapletree Pan Asia Commercial Trust",
+    "url": "https://www.mapletreepact.com/Portfolio/Property.aspx?currentProperty=/All-Properties/MCT/Singapore/VivoCity",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "Issuer public portfolio page",
+    "reliability": "official",
+    "notes": "Loaded for issuer and asset identity; valuation fields are intentionally null until primary valuation fields are extracted."
+  },
+  {
+    "id": "src-bt-seletar-boustead-2026",
+    "label": "BT - UI Boustead REIT Seletar aerospace facility",
+    "publisher": "The Business Times",
+    "url": "https://www.businesstimes.com.sg/companies-markets/ui-boustead-reit-boustead-unit-co-invest-s104-million-seletar-aerospace-facility",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "Published 2026-05-23",
+    "reliability": "paid",
+    "notes": "Structured event facts only; source link retained for analyst verification."
+  },
+  {
+    "id": "src-bt-novena-singland-2026",
+    "label": "BT - SingLand buys UOB stake in Novena Square JVs",
+    "publisher": "The Business Times",
+    "url": "https://www.businesstimes.com.sg/companies-markets/singland-buys-out-uobs-stake-novena-square-jvs-s299-million",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "Published 2026-05-15",
+    "reliability": "paid",
+    "notes": "Structured event facts only; source link retained for analyst verification."
+  },
+  {
+    "id": "src-bt-faber-uol-2026",
+    "label": "BT - UOL buys UOB stake in former Faber House",
+    "publisher": "The Business Times",
+    "url": "https://www.businesstimes.com.sg/companies-markets/uol-buy-out-uob-stake-former-faber-house-s68-million-amid-nomad-hotel-rebuild",
+    "retrieved_at": "2026-06-25",
+    "data_vintage": "Published 2026-05-15",
+    "reliability": "paid",
+    "notes": "Structured event facts only; source link retained for analyst verification."
+  }
+]

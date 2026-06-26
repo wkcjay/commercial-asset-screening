@@ -1,0 +1,44 @@
+[
+  {
+    "id": "site-queenstown-001",
+    "name": "Queenstown Official HDB Reference Site",
+    "address": "53 STRATHMORE AVENUE FORFAR HEIGHTS SINGAPORE 140053",
+    "country": "SG",
+    "district": "3",
+    "planning_area": "Queenstown",
+    "latitude": 1.292778586438066,
+    "longitude": 103.8084459601947,
+    "asset_class": "residential",
+    "tenure": "leasehold",
+    "land_area_sqm": null,
+    "gross_plot_ratio_hint": null
+  },
+  {
+    "id": "site-tampines-001",
+    "name": "Tampines Official HDB Reference Site",
+    "address": "499B TAMPINES AVENUE 9 TAMPINES RIA SINGAPORE 522499",
+    "country": "SG",
+    "district": "18",
+    "planning_area": "Tampines",
+    "latitude": 1.358870205267269,
+    "longitude": 103.9563316588756,
+    "asset_class": "residential",
+    "tenure": "leasehold",
+    "land_area_sqm": null,
+    "gross_plot_ratio_hint": null
+  },
+  {
+    "id": "site-bishan-001",
+    "name": "Bishan Official HDB Reference Site",
+    "address": "195 BISHAN STREET 13 BISHAN SPRING SINGAPORE 570195",
+    "country": "SG",
+    "district": "20",
+    "planning_area": "Bishan",
+    "latitude": 1.348362497731312,
+    "longitude": 103.850897052933,
+    "asset_class": "residential",
+    "tenure": "leasehold",
+    "land_area_sqm": null,
+    "gross_plot_ratio_hint": null
+  }
+]

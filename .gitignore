@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+.env
+
+apps/api/.venv/
+apps/api/.packages/
+apps/api/.testpackages/
+apps/api/.env
+apps/api/data/local.db
+
+apps/web/node_modules/
+apps/web/.next/
+apps/web/.env.local
+apps/web/out/
+apps/web/tsconfig.tsbuildinfo
