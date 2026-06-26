@@ -215,7 +215,11 @@ The first screen is the product itself: a single dashboard workflow, not a landi
 | Optional AI + fallback | Reviewer can run without secrets while still supporting AI | Fallback memo is less expressive |
 | Constrained generator, not agent | More consistent for trust-sensitive memo writing | Less autonomous than a full agent |
 
-## 9. What To Read Next
+## 9. Reviewer Context
+
+Approximate time spent was 9-10 hours total. The core working vertical slice was around 6-8 hours; the remaining time went into the commercial-scope pivot, source alignment, Docker and AI-provider setup, tests, GitHub publishing, and reviewer-ready documentation cleanup.
+
+## 10. What To Read Next
 
 * [Product PRD](product.md) for scope, user journey, and product decisions.
 * [Deep Technical Design](technical-design.md) for schemas, endpoints, data model, tests, and setup.

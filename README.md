@@ -206,6 +206,21 @@ Clear Dockerized memo and assessment cache:
 docker compose exec -T api python -c "import sqlite3; c=sqlite3.connect('/data/local.db'); c.execute('delete from memo_runs'); c.execute('delete from assessment_runs'); c.commit()"
 ```
 
+## Time Spent
+
+Approximate total time spent: 9-10 hours.
+
+Breakdown:
+
+* Product scoping and technical design: about 1.5 hours
+* Backend FastAPI, SQLite schema, APIs, scoring, memo cache: about 2.5 hours
+* Commercial asset data model and curated source-linked data: about 1.5 hours
+* Frontend commercial asset dashboard: about 1.5 hours
+* Docker Compose, setup, AI-provider config, and tests: about 1 hour
+* Documentation alignment, GitHub setup, and cleanup: about 1 hour
+
+The core working vertical slice was around 6-8 hours. The remaining time went into the commercial-scope pivot, source alignment, and reviewer-ready documentation.
+
 ## Notes
 
 This project prioritizes sharp product and technical decisions over feature breadth. The main tradeoff is choosing a narrow, auditable commercial asset-screening workflow instead of a broad AI assistant.
