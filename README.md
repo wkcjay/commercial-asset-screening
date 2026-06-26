@@ -1,14 +1,14 @@
-# Site Screening Copilot
+# Commercial Asset Screening Copilot
 
 A take-home assignment for a Digital & AI Product Builder role.
 
 ## Overview
 
-Site Screening Copilot is a lightweight AI-powered tool designed to help real estate development teams screen potential development sites faster and more consistently.
+Commercial Asset Screening Copilot is a Dockerized full-stack MVP for screening Singapore commercial real estate assets. The current product focuses on REIT portfolio assets, issuer-reported valuations, selected public market events, source provenance, risk flags, and memo generation.
 
-The product focuses on early-stage site assessment. It brings together comparable transactions, accessibility, amenities, demographics, zoning or planning context, and uses AI to generate a grounded first-pass investment memo.
+The app does not try to be a final valuation engine. It is a first-pass screening workflow that helps an investment analyst move from fragmented public data to a structured, auditable memo.
 
-The goal is not to replace investment judgment. The goal is to reduce manual research effort, improve consistency across analysts, and make site-screening outputs easier to audit.
+The main product decision is to keep AI behind the backend facts. The backend owns data ingestion, SQLite persistence, metrics, source links, confidence, and risk rules. AI, when configured, only drafts a memo from the structured assessment payload. Without an AI key, the backend returns a deterministic fallback memo.
 
 ## Product Thinking
 
@@ -20,125 +20,107 @@ The product thinking, scope decisions, tradeoffs, and future roadmap are documen
 
 [Read the Product PRD](docs/product.md)
 
-The build-oriented architecture, data model, API design, AI grounding approach, and implementation plan are documented here:
+The build-oriented architecture, data model, API design, AI grounding approach, and implementation details are documented here:
 
 [Read the Technical Design](docs/technical-design.md)
 
+The original assignment brief is preserved unchanged here:
+
+[Read the Take-Home Brief](docs/take-home-brief-lean.md)
+
 ## Problem
 
-ABC Development Group’s development team currently assesses potential sites by manually gathering fragmented data from different sources. This includes comparable transactions, supply pipeline, demographics, accessibility, zoning, and asset performance.
+ABC Development Group assesses development opportunities and monitors existing real estate assets across residential, retail, and commercial markets. Analysts manually gather issuer facts, transaction headlines, market evidence, source links, risks, assumptions, and memo text.
 
 This process is:
 
 * Slow
 * Inconsistent across analysts
 * Difficult to audit
-* Dependent on individual analyst workflows
+* Vulnerable to unsupported AI-generated facts if not controlled
 
-AI can improve this workflow, but only if it is grounded in trusted data and used in a controlled way.
+## Current MVP
 
-## Proposed Solution
+The implemented MVP is scoped to Singapore commercial asset screening, with office, retail, and mixed-use assets from listed REIT or trust portfolios.
 
-The MVP is a structured site-screening copilot.
+A user selects a commercial asset and receives a structured assessment covering:
 
-A user selects an official-data-backed Singapore residential reference location, and the system generates a structured assessment covering:
+* Issuer, asset type, submarket, address, ownership, tenure, NLA, and occupancy where available
+* Latest issuer-reported valuation and valuation psf where available
+* Attributable value where ownership and valuation basis allow it
+* Recent structured market events with buyer, seller, amount, stake, source URL, and review flags
+* Missing-data flags, risks, assumptions, limitations, and confidence
+* Source links and source reliability
+* AI-assisted or fallback memo generation
 
-* Comparable transactions
-* Accessibility
-* Nearby amenities
-* Demographic catchment gaps
-* Zoning or planning context gaps
-* Key risks and assumptions
-* AI-generated site-screening memo
+The first screen is the working product dashboard, not a landing page or chatbot.
 
-The backend computes structured insights first. The AI layer then summarizes those insights into a memo. The AI is not treated as the source of truth.
+## Data
+
+The app runs offline from checked-in raw data under `apps/api/data/raw`.
+
+Current commercial data includes:
+
+* OUE REIT assets with issuer-reported property facts and valuations
+* CICT assets with issuer-reported property facts and valuations
+* Keppel REIT, Suntec REIT, and MPACT representative assets where issuer identity is loaded and missing valuation fields are surfaced as limitations
+* Selected Business Times market-event facts stored as structured records with source links, not article bodies
+
+The repository also still contains HDB and OneMap extracts because the backend retains legacy residential `/sites` endpoints from the earlier vertical slice. These are not the primary frontend workflow.
 
 ## Key Product Decision
 
-I intentionally chose not to build a chatbot-first experience for the MVP.
+I intentionally did not build a chatbot-first experience.
 
-A chatbot interface can be useful, but in a real estate investment workflow, trust and auditability matter more than conversational flexibility. A chatbot-first product risks becoming a generic LLM wrapper.
+For real estate investment workflows, trust and auditability matter more than conversational flexibility. A chatbot-first product risks becoming a generic LLM wrapper. The MVP instead builds the underlying real estate intelligence layer: data model, source provenance, deterministic analytics, risk logic, confidence scoring, and constrained memo generation.
 
-Instead, the MVP focuses on the underlying real estate intelligence layer: data ingestion, analytics, scoring, and source-grounded memo generation.
-
-Once that foundation exists, other interfaces can be added later, such as:
+Other interfaces can be added later:
 
 * Chatbot
-* Telegram-style assistant
 * Newsletter digest
+* Portfolio monitoring alerts
+* MCP server
 * API access
-* MCP-based tool server
 
-## MVP Scope
-
-For the take-home, the MVP is scoped to Singapore residential site screening.
-
-This is intentionally narrow so the product can demonstrate:
-
-* Clear user workflow
-* Grounded data usage
-* Explainable analytics
-* AI-assisted memo generation
-* Practical engineering tradeoffs
-
-## Out of Scope
-
-The MVP does not attempt to cover:
-
-* All Southeast Asian markets
-* All asset classes
-* Full financial modelling
-* Live paid property datasets
-* Final investment decision-making
-* Newsletter automation
-* MCP integration
-* Generic chatbot interaction
-
-These are potential future extensions.
+All of those should reuse the same backend intelligence layer rather than putting business logic inside the AI prompt.
 
 ## AI Trust Approach
 
 The AI layer follows a grounded generation pattern:
 
-1. Backend services retrieve and compute structured site data.
-2. The AI receives only the structured context.
-3. The AI generates a memo using only the provided data.
-4. Missing information is shown as a limitation.
+1. Backend services load and compute structured asset data.
+2. The AI receives only the structured assessment payload.
+3. The AI returns a schema-validated memo.
+4. Missing information is shown as a limitation or diligence item.
 5. The memo separates facts, assumptions, risks, and recommendations.
 
-This reduces hallucination risk and makes the output more suitable for decision-support workflows.
-
-## Future Roadmap
-
-Future versions could expose the same real estate intelligence layer through multiple interfaces:
-
-* MCP server for analysts using their own LLM clients
-* Weekly market or asset-monitoring newsletter
-* Conversational assistant
-* Portfolio monitoring alerts
-* Regional expansion across Southeast Asia
-* More asset classes such as retail and commercial
-
-The key principle is that every interface should reuse the same trusted intelligence layer instead of duplicating business logic inside the AI model.
+If no AI provider is configured, memo generation still works through a deterministic fallback template.
 
 ## Repository Structure
 
 ```text
-site-screening-copilot/
+commercial-asset-screening/
   README.md
+  LICENSE
   docker-compose.yml
   docs/
     design-review.md
     product.md
     technical-design.md
+    take-home-brief-lean.md
   apps/
-    web/
-      Dockerfile
     api/
       Dockerfile
+      app/
       data/
         raw/
         local.db   # generated and ignored
+      tests/
+    web/
+      Dockerfile
+      app/
+      components/
+      lib/
 ```
 
 ## Setup
@@ -156,9 +138,9 @@ Frontend: http://localhost:3000
 Backend:  http://localhost:8000/health
 ```
 
-The intended local runtime is a Docker Compose stack with a FastAPI backend, Next.js frontend, and a generated SQLite database volume. Native Python/Node commands are also available for development, but Compose is the default reviewer-safe path.
+The intended local runtime is a Docker Compose stack with a FastAPI backend, Next.js frontend, and a generated SQLite database volume. Native Python and Node commands are also available for development, but Compose is the default reviewer-safe path.
 
-### Optional AI memo provider
+## Optional AI Memo Provider
 
 The app works without an AI key. By default, memo generation uses the deterministic fallback template and `/health` returns `"aiConfigured": false`.
 
@@ -188,39 +170,42 @@ docker compose up -d --build
 
 When configured successfully, `/health` returns `"aiConfigured": true`, and memo responses show `"provider": "openai-compatible"` and `"usedFallback": false`. If the provider call fails, the backend returns the deterministic fallback memo with a warning instead of breaking the user flow.
 
-Default data is a checked-in official extract generated from:
+## Useful Commands
 
-* HDB resale flat prices on data.gov.sg
-* OneMap Search API geocoding and amenity address results
-
-The app runs offline from `apps/api/data/raw`. To refresh the extract from official APIs:
+Backend tests:
 
 ```bash
 cd apps/api
-python -m app.scripts.refresh_official_data
-python -m app.scripts.db_reset
-```
-
-Backend-only development:
-
-```bash
-cd apps/api
-python -m pip install -r requirements.txt
-python -m app.scripts.db_reset
 python -m pytest
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
-Frontend-only development:
+Frontend type check:
 
 ```bash
 cd apps/web
-npm install
-npm run dev
+npm run lint
+```
+
+Frontend production build:
+
+```bash
+cd apps/web
+npm run build
+```
+
+Reset local API database outside Docker:
+
+```bash
+cd apps/api
+python -m app.scripts.db_reset
+```
+
+Clear Dockerized memo and assessment cache:
+
+```bash
+docker compose exec -T api python -c "import sqlite3; c=sqlite3.connect('/data/local.db'); c.execute('delete from memo_runs'); c.execute('delete from assessment_runs'); c.commit()"
 ```
 
 ## Notes
 
-This project prioritizes sharp product and technical decisions over feature completeness.
-
-The main tradeoff is choosing a narrow but trustworthy workflow instead of a broad AI assistant. This is intentional because real estate development decisions require evidence, traceability, and human judgment.
+This project prioritizes sharp product and technical decisions over feature breadth. The main tradeoff is choosing a narrow, auditable commercial asset-screening workflow instead of a broad AI assistant.
