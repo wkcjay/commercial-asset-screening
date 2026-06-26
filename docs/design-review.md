@@ -12,26 +12,26 @@ The backend still retains legacy residential `/sites` endpoints from the earlier
 
 ```mermaid
 flowchart TD
-  analyst[Investment Analyst] --> web[Next.js Frontend]
+  analyst["Investment Analyst"] --> web["Next.js Frontend"]
 
   web -->|HTTP via NEXT_PUBLIC_API_BASE_URL| api[FastAPI Backend]
 
-  api --> services[Commercial Assessment + Memo Services]
-  services --> repos[SQLAlchemy Core Repositories]
+  api --> services["Commercial Assessment + Memo Services"]
+  services --> repos["SQLAlchemy Core Repositories"]
   repos --> sqlite[(SQLite local.db)]
 
-  raw[data/raw public-source snapshots] --> init[db_init / db_reset]
+  raw["data/raw public-source snapshots"] --> init["db_init / db_reset"]
   init --> sqlite
 
-  services --> cache[(assessment_runs + memo_runs)]
+  services --> cache[("assessment_runs + memo_runs")]
   cache --> sqlite
 
-  services --> assessment[CommercialAssetAssessment]
-  assessment --> memo[Constrained Memo Generator]
-  memo --> ai[Optional OpenAI-Compatible Provider]
-  memo --> fallback[Deterministic Fallback Memo]
+  services --> assessment["CommercialAssetAssessment"]
+  assessment --> memo["Constrained Memo Generator"]
+  memo --> ai["Optional OpenAI-Compatible Provider"]
+  memo --> fallback["Deterministic Fallback Memo"]
 
-  sqlite --> sources[Source Provenance]
+  sqlite --> sources["Source Provenance"]
   sources --> web
 ```
 
@@ -39,18 +39,18 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  reviewer[Reviewer / Developer] --> compose[docker compose up --build]
+  reviewer["Reviewer / Developer"] --> compose["docker compose up --build"]
 
-  compose --> api[api service: FastAPI on 8000]
-  compose --> web[web service: Next.js on 3000]
+  compose --> api["api service: FastAPI on 8000"]
+  compose --> web["web service: Next.js on 3000"]
 
   api --> db[(SQLite local.db)]
-  api --> raw[data/raw checked-in snapshots]
-  api --> volume[Docker named volume]
+  api --> raw["data/raw checked-in snapshots"]
+  api --> volume["Docker named volume"]
   db --> volume
 
   web -->|HTTP| api
-  api --> optional_ai[Optional AI provider]
+  api --> optional_ai["Optional AI provider"]
 ```
 
 Default reviewer path:
@@ -65,27 +65,27 @@ SQLite remains the MVP database so reviewers do not need to run a separate datab
 
 ```mermaid
 flowchart TD
-  raw[data/raw committed snapshots] --> init[python -m app.scripts.db_init]
+  raw["data/raw committed snapshots"] --> init["python -m app.scripts.db_init"]
 
-  init --> validate[Validate records and source links]
-  validate --> version[Create data_versions entry]
+  init --> validate["Validate records and source links"]
+  validate --> version["Create data_versions entry"]
   version --> db[(SQLite data/local.db)]
 
-  db --> repo[SQLAlchemy Core repositories]
-  repo --> api[FastAPI endpoints]
+  db --> repo["SQLAlchemy Core repositories"]
+  repo --> api["FastAPI endpoints"]
 
-  api --> assess[Commercial assessment service]
-  assess --> acache{assessment_runs cache hit?}
-  acache -->|yes| cached_assessment[Return cached assessment]
-  acache -->|no| compute[Compute valuation metrics + events + risks]
-  compute --> astore[Store assessment_runs]
+  api --> assess["Commercial assessment service"]
+  assess --> acache{"assessment_runs cache hit?"}
+  acache -->|yes| cached_assessment["Return cached assessment"]
+  acache -->|no| compute["Compute valuation metrics + events + risks"]
+  compute --> astore["Store assessment_runs"]
   astore --> cached_assessment
 
-  api --> memo[Memo service]
-  memo --> mcache{memo_runs cache hit?}
-  mcache -->|yes| generated[Return cached memo]
-  mcache -->|no| fallback_or_ai[Generate AI or fallback memo]
-  fallback_or_ai --> mstore[Store memo_runs]
+  api --> memo["Memo service"]
+  memo --> mcache{"memo_runs cache hit?"}
+  mcache -->|yes| generated["Return cached memo"]
+  mcache -->|no| fallback_or_ai["Generate AI or fallback memo"]
+  fallback_or_ai --> mstore["Store memo_runs"]
   mstore --> generated
 ```
 
@@ -148,24 +148,24 @@ POST /sites/{site_id}/memo
 
 ```mermaid
 flowchart TD
-  request[POST /commercial-assets/{asset_id}/memo] --> assess[Load or compute CommercialAssetAssessment]
-  assess --> payload[Structured assessment payload]
-  payload --> cache{memo_runs cache hit?}
+  request["POST /commercial-assets/{asset_id}/memo"] --> assess["Load or compute CommercialAssetAssessment"]
+  assess --> payload["Structured assessment payload"]
+  payload --> cache{"memo_runs cache hit?"}
 
-  cache -->|yes| cached[Return cached GeneratedMemo]
-  cache -->|no| configured{AI enabled and configured?}
+  cache -->|yes| cached["Return cached GeneratedMemo"]
+  cache -->|no| configured{"AI enabled and configured?"}
 
-  configured -->|no| fallback[Generate deterministic fallback memo]
-  configured -->|yes| prompt[Build guarded JSON prompt]
+  configured -->|no| fallback["Generate deterministic fallback memo"]
+  configured -->|yes| prompt["Build guarded JSON prompt"]
 
-  prompt --> ai[Call OpenAI-compatible provider]
-  ai --> parse[Parse JSON]
-  parse --> validate{Pydantic validation passes?}
+  prompt --> ai["Call OpenAI-compatible provider"]
+  ai --> parse["Parse JSON"]
+  parse --> validate{"Pydantic validation passes?"}
 
-  validate -->|yes| store[Store memo_runs]
+  validate -->|yes| store["Store memo_runs"]
   validate -->|no| fallback
 
-  fallback --> response[Return memo with warning if needed]
+  fallback --> response["Return memo with warning if needed"]
   store --> response
   cached --> response
 ```
@@ -176,26 +176,26 @@ AI is a constrained memo generator, not an autonomous agent. It cannot retrieve 
 
 ```mermaid
 flowchart LR
-  app[Commercial Asset Screening Screen]
+  app["Commercial Asset Screening Screen"]
 
-  app --> top[Top Bar]
-  top --> status[Data Version + AI/Fallback + Cache Status]
+  app --> top["Top Bar"]
+  top --> status["Data Version + AI/Fallback + Cache Status"]
 
-  app --> left[Asset Panel]
-  left --> selector[Commercial Asset Selector]
-  left --> issuer[Issuer + Submarket + Reliability]
+  app --> left["Asset Panel"]
+  left --> selector["Commercial Asset Selector"]
+  left --> issuer["Issuer + Submarket + Reliability"]
 
-  app --> main[Assessment Dashboard]
-  main --> snapshot[Asset Snapshot]
-  main --> valuation[Valuation Metrics]
-  main --> events[Market Events Table]
-  main --> risks[Risks + Assumptions + Limitations]
-  main --> sources[Source Chips]
+  app --> main["Assessment Dashboard"]
+  main --> snapshot["Asset Snapshot"]
+  main --> valuation["Valuation Metrics"]
+  main --> events["Market Events Table"]
+  main --> risks["Risks + Assumptions + Limitations"]
+  main --> sources["Source Chips"]
 
-  app --> memo[Memo Panel]
-  memo --> generate[Generate Memo Button]
-  memo --> draft[Structured Memo Sections]
-  memo --> usage[Source Usage Note]
+  app --> memo["Memo Panel"]
+  memo --> generate["Generate Memo Button"]
+  memo --> draft["Structured Memo Sections"]
+  memo --> usage["Source Usage Note"]
 ```
 
 The first screen is the product itself: a single dashboard workflow, not a landing page, wizard, or chatbot.
