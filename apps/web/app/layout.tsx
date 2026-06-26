@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Site Screening Copilot",
-  description: "Grounded site screening dashboard for Singapore residential reference locations.",
+  title: "Commercial Asset Screening Copilot",
+  description: "Grounded screening dashboard for Singapore commercial real estate assets.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

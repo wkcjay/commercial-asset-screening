@@ -138,7 +138,7 @@ Frontend: http://localhost:3000
 Backend:  http://localhost:8000/health
 ```
 
-The intended local runtime is a Docker Compose stack with a FastAPI backend, Next.js frontend, and a generated SQLite database volume. Native Python and Node commands are also available for development, but Compose is the default reviewer-safe path.
+The intended local runtime is a Docker Compose stack with a FastAPI backend, Next.js frontend, and a generated SQLite database volume. Compose uses a fast frontend reviewer target so the default setup does not run a full production `next build`; use the commands below for explicit type checking or production build verification.
 
 ## Optional AI Memo Provider
 
